@@ -242,6 +242,8 @@ async def next_match(message,sankasya_list,oya,children_list,bet_dic,max_st,max_
         await message.channel.send("「!start」からやり直してください。")
     else:
         await message.channel.send("試合を終了します。")
+        await asyncio.sleep(60)
+        await message.channel.send("「!start」で参加者の募集を開始します。")
         
         
 async def ccr(message,i):
