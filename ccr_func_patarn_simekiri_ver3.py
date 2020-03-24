@@ -51,11 +51,6 @@ async def dicide_oya(message,sankasya_list):
     await message.channel.send(f"{oya.name}さんが親です。")
     children_list = sankasya_list
     children_list.remove(oya)
-
-    print(f"参加者{sankasya_list}")
-    print("---------------")
-    print(f"子{children_list}")
-    print("---------------")
     
     await dicide_max_bet(message,sankasya_list,oya,children_list)
 
@@ -110,7 +105,6 @@ async def ko_bet_time(message,sankasya_list,oya,children_list,max_st,max_ko,max_
                         break
                 except:
                     await message.channel.send("使える文字は半角数字、stのみです。")
-    print(bet_dic)
 
     await ccr_time(message,sankasya_list,oya,children_list,bet_dic,max_st,max_ko,max_bet)
 
