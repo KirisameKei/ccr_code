@@ -1,1 +1,1 @@
-discordbot: python ccr_func_patarn_simekiri_ver3.py
+discordbot: python ccr_func_patarn_simekiri_ver4.py
